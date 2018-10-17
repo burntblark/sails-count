@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "sails-count@^1.2.0",
+        "scope": null,
+        "escapedName": "sails-count",
+        "name": "sails-count",
+        "rawSpec": "^1.2.0",
+        "spec": ">=1.2.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/mac/Documents/RFNL/Projects/fixershub"
+    ]
+  ],
+  "_from": "sails-count@>=1.2.0 <2.0.0",
+  "_id": "sails-count@1.2.0",
+  "_inCache": true,
+  "_location": "/sails-count",
+  "_nodeVersion": "8.1.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/sails-count-1.2.0.tgz_1499156495800_0.6919179682154208"
+  },
+  "_npmUser": {
+    "name": "toniton",
+    "email": "akinjiolatoni@gmail.com"
+  },
+  "_npmVersion": "5.0.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "sails-count@^1.2.0",
+    "scope": null,
+    "escapedName": "sails-count",
+    "name": "sails-count",
+    "rawSpec": "^1.2.0",
+    "spec": ">=1.2.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sails-count/-/sails-count-1.2.0.tgz",
+  "_shasum": "5a8d02d2d16030c7610dad2394bf42a88b803cde",
+  "_shrinkwrap": null,
+  "_spec": "sails-count@^1.2.0",
+  "_where": "/Users/mac/Documents/RFNL/Projects/fixershub",
+  "author": {
+    "name": "Akinjiola Toni"
+  },
+  "bugs": {
+    "url": "https://github.com/toniton/sails-count/issues"
+  },
+  "dependencies": {
+    "async": "^2.1.2",
+    "lodash": "^4.16.4",
+    "sails": ">=0.11.0",
+    "sails-util": "^0.11.0"
+  },
+  "description": "This is a sailsjs library that helps you integrate count (Javascript count) with your sails app.",
+  "devDependencies": {
+    "sails": ">=0.11.0",
+    "sails-disk": "^0.10.10"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-Kkwp9iOutrNw8/8/tIiky5NgmdL1Byqztrqpnh6eubFkgHE/YWX5ClfGvsIZICt0JQZckC/TJJkec3kabczD4A==",
+    "shasum": "5a8d02d2d16030c7610dad2394bf42a88b803cde",
+    "tarball": "https://registry.npmjs.org/sails-count/-/sails-count-1.2.0.tgz"
+  },
+  "gitHead": "c68484c73ad74d197e4d64726fe907eabdff667a",
+  "homepage": "https://github.com/toniton/sails-count#readme",
+  "keywords": [
+    "sails",
+    "datatable",
+    "count",
+    "pagination",
+    "load",
+    "more",
+    "infinite",
+    "loading"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "toniton",
+      "email": "akinjiolatoni@gmail.com"
+    }
+  ],
+  "name": "sails-count",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toniton/sails-count.git"
+  },
+  "sails": {
+    "isHook": true
+  },
+  "version": "1.2.0"
+}
