@@ -2,34 +2,34 @@
 <a href="http://sailsjs.org"><img alt="Sails.js logo" src="http://balderdashy.github.io/sails/images/logo.png" title="Sails.js"/></a>
 </h1>
 
-# sails-datatables
-This is a sailsjs library that helps you integrate datatables (Javascript datatables) with your sails app.
+# sails-count
+This is a sailsjs library that helps you integrate count (Javascript count) with your sails app.
 
 ### Get Started
-This library would help you easily query your sails endpoint for datasets that is easily understood by javascript datatables. It works like blueprint, so you can imagine how easy it must be to use. Try and testify!!!
+This library would help you easily query your sails endpoint for datasets that is easily understood by javascript count. It works like blueprint, so you can imagine how easy it must be to use. Try and testify!!!
 
 ### Installation
 ***With [node](http://nodejs.org) [installed](http://nodejs.org/en/download):***
 ```
-npm install sails-datatables --save
+npm install sails-count --save
 ```
 
 ### Endpoint
-Just like blueprint actions a datatable action is automatically available on all models for you.
+Just like blueprint actions a count action is automatically available on all models for you.
 ```Javascript
 //assuming you have a model User
-/user/datatable
+/user/count
 
 //or if you have a prefix api
-/api/user/datatable
+/api/user/count
 ```
 
 ### Policies
-The datatable action automatically inherits its parent policies.
+The count action automatically inherits its parent policies.
 ```Javascript
 //in config/policies.js
 module.exports.policies = {
-    // all datatable route inherit this by default.
+    // all count route inherit this by default.
     '*': [
         'hasToken',
         'isAuthenticated',
@@ -38,18 +38,18 @@ module.exports.policies = {
         'RolePolicy'
     ],
     
-    // user/datatable route would not be bound by any policy
+    // user/count route would not be bound by any policy
     UserController: [],
     
-    // rabbit/datatable route would only inherit these two policies
+    // rabbit/count route would only inherit these two policies
     RabbitController: [
         'hasToken',
         'isAuthenticated'
     ],
     
-    // payment/datatable route would only inherit this one policy
+    // payment/count route would only inherit this one policy
     PaymentController: {
-        'datatable':[
+        'count':[
           'isAuthenticated'
         ]
     }
@@ -57,8 +57,8 @@ module.exports.policies = {
 ```
 
 ### Usage
-Send a `GET` or `POST` to `/model/datatable` or `/api/model/datatable` if you have the api prefix turned on in blueprint.
-Please rely on [Datatable's Documentation](https://datatables.net/) for your implementation on the frontend.
+Send a `GET` or `POST` to `/model/count` or `/api/model/count` if you have the api prefix turned on in blueprint.
+Please rely on [count's Documentation](https://count.net/) for your implementation on the frontend.
 
 ```Javascript
         vm.dtOptions = {
@@ -66,8 +66,8 @@ Please rely on [Datatable's Documentation](https://datatables.net/) for your imp
             processing: true,
             serverSide: true,
             ajax: {
-                //the url to the model/datatable
-                url: 'http://#######/model/datatable',
+                //the url to the model/count
+                url: 'http://#######/model/count',
                 //You can use either a GET or POST verb
                 type: 'GET',
                 dataSrc: "aaData"
@@ -76,7 +76,7 @@ Please rely on [Datatable's Documentation](https://datatables.net/) for your imp
         }
 ```
 
-Nested data are automatically populated for you using the dot notations in your datatable options column definition
+Nested data are automatically populated for you using the dot notations in your count options column definition
 ###### NB: Sails can only populate nested data two levels deep.
 
 ```Javascript
